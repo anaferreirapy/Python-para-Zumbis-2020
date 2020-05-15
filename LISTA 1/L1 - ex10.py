@@ -6,8 +6,8 @@
 qtcig = int(input('Informe a quantidade de cigarros que você fuma por dia:'))
 anos = int(input('Informe por quantos anos você já fumou/fuma:'))
 
-r = (qtcig * 0.16) * anos * 365
+r = (qtcig * anos * 365) / 144
 
-print('Você perdeu ',r,' dias da sua vida por fumar.')
+print(f'Você perdeu {r: .1f} dias da sua vida por fumar.')
 
 
