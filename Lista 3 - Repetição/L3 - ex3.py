@@ -4,3 +4,12 @@
 #necessários para que a população do país A ultrapasse ou iguale a população do país B,
 #mantidas as taxas de crescimento.
 
+habA = 80000
+habB = 200000
+anos = 0
+
+while (habA <= habB):
+    habA = habA + habA * 0.03
+    habB = habB + habB * 0.015
+    anos = anos + 1
+print(anos)
